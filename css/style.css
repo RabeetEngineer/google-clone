@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* CSS */
+.flex-container{
+  height: 20vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.flex-container .link{
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 10px;
+  color: black;
+ 
+}
+a.link:hover{
+  text-decoration: underline;
+  
+}
+.flex-container img{
+  max-height: 20px; 
+  padding: 10px 15px; 
+}
+
+.flex-container img:hover {
+  /* Change the background color when hovering over the icon-container */
+  background-color: gainsboro;
+  transition: background-color 0.6s ease;
+  border-radius: 30%;
+}
+
+.flex-container .sign-in{
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px; 
+  height: 20px;
+}
+a.sign-in:hover{
+  background-color: #0056b3;
+}
+
+/* Section 1 Container */
+
+.section-1-container{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-1-container img{
+  height: 100px;
+}
+/* Flexbox container for the search bar */
+.search-container {
+  padding: 10px; 
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+}
+
+/* Search input field */
+.search-input {  
+  width: 600px;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  transition: padding 0.2s, border 0.2s;
+}
+.search-input:hover {  
+  padding: 20px;
+  border: none;
+  
+}
+.search-input:focus {
+  border: 2px solid red;
+  /* Other styling properties for the focused state */
+}
+
+/* Search button */
+.button-styling {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  background-color: #F8F9FA;
+  color: black;
+  border-radius: 2px;
+  cursor: pointer;  
+}
+
+/* Hover effect for the search button */
+.button-styling:hover {
+  border: 2px solid #ccc; /* Darker background color on hover */
+}
+
+.language-portion{
+  display: flex;
+  gap: 20px;
+}
+a.language-links{
+  text-decoration: none;
+}
+a.language-links:hover{
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.footer{
+  background-color: #F2F2F2;
+  height: 20vh;
+}
+.footer-container{
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+ flex-direction: column;   
+}
+.footer-container p{
+  font-size: 15px; 
+  color: #70757A; 
+}
+.footer-links{
+  border-top: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links ul{
+  display: flex;
+  padding: 0;
+  font-size: 15px;
+}
+
+.footer-links li{ 
+  padding: 0px 20px 15px 0px;
+  list-style-type: none;
+}
+.footer-links a{
+  text-decoration: none;
+  color: #70757A;  
+}
+
+ /* When the screen is less than 800px wide, stack the links and the search field vertically instead of horizontally */
+ @media screen and (max-width: 680px) {
+  .section-1-container img{
+    height: 50px;
+  }
+  .search-input{
+    width: 300px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .button-styling {
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #F8F9FA;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;  
+  }
+  a.language-links{
+    font-size: 15px;
+  }
+
+  .footer-links{
+    border-top: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
